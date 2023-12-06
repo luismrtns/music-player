@@ -3,65 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estilo.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="script.js" defer></script>
-  <title>Music-Love</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="responsive.css">
+  <script src="texto.js" defer></script>
+  <title>amorzin</title>
 </head>
 <body>
-  <div class="player">
-    <div class="wrapper">
-      <div class="details">
-        <div class="tocando">Tocando x de y</div>
-        <div id="track-arte"></div>
-        <div class="track-name">Track name</div>
-        <div class="track-artista">Track artista</div>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="musica.html"><i class="bi bi-music-note-beamed"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="left">
+        <h2 id="texto">07/09/2022</h2>
+        <p>Mais um mês juntos, mais um mês sendo o homem mais feliz do mundo, mais um mês ficando mais e mais apaixonado por você. Sou muito grato por tudo amor, obrigado por sempre tá comigo. Quero sempre ser um bom namorado e sempre te fazer feliz, sempre vou te amar muito e mais e mais a cada dia. Eu te amo muito danada!</p>
       </div>
-
-      <div class="slider-container">
-        <div class="current-time">00:00</div>
-        <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
-        <div class="duracao">00:00</div>
+      <div class="right">
+        <img src="pixel.jpeg" alt="">
+        <div class="shadow"></div>
       </div>
-
-      <div class="slider-container">
-        <i class='bx bx-volume-low'></i>
-        <input type="range" min="1" max="100" value="99" class="volume-changer" onchange="setVolume()">
-        <i class='bx bx-volume-full'></i>
-      </div>
-
-      <div class="btns">
-        <div class="random" onclick="randomTrack()">
-          <i class='bx bx-shuffle aleatorio'></i>
-        </div>
-
-        <div class="prev" onclick="prevTrack()">
-          <i class='bx bx-skip-next bx-flip-horizontal' ></i>
-        </div>
-
-        <div class="playpause" onclick="playpauseTrack()">
-          <i class='bx bx-play-circle'></i>
-        </div>
-
-        <div class="next" onclick="nextTrack()">
-          <i class='bx bx-skip-next'></i>
-        </div>
-
-        <div class="repeat" onclick="repeatTrack()">
-          <i class='bx bx-revision'></i>
-        </div>
-      </div>
-
-      <div id="wave">
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-        <span class="stroke"></span>
-      </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </body>
 </html>

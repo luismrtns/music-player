@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="script.js" defer></script>
+  <title>Music-Love</title>
+</head>
+<body>
+  <div class="player">
+    <div class="wrapper">
+      <div class="details">
+        <div class="tocando">Tocando x de y</div>
+        <div id="track-arte"></div>
+        <div class="track-name">Track name</div>
+        <div class="track-artista">Track artista</div>
+      </div>
+
+      <div class="slider-container">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
+        <div class="duracao">00:00</div>
+      </div>
+
+      <div class="slider-container">
+        <i class='bx bx-volume-low'></i>
+        <input type="range" min="1" max="100" value="99" class="volume-changer" onchange="setVolume()">
+        <i class='bx bx-volume-full'></i>
+      </div>
+
+      <div class="btns">
+        <div class="random" onclick="randomTrack()">
+          <i class='bx bx-shuffle aleatorio'></i>
+        </div>
+
+        <div class="prev" onclick="prevTrack()">
+          <i class='bx bx-skip-next bx-flip-horizontal' ></i>
+        </div>
+
+        <div class="playpause" onclick="playpauseTrack()">
+          <i class='bx bx-play-circle'></i>
+        </div>
+
+        <div class="next" onclick="nextTrack()">
+          <i class='bx bx-skip-next'></i>
+        </div>
+
+        <div class="repeat" onclick="repeatTrack()">
+          <i class='bx bx-revision'></i>
+        </div>
+      </div>
+
+      <div id="wave">
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
