@@ -213,3 +213,23 @@ body{
 .stroke:nth-child(7){
   animation-delay: 0s;
 }
+
+@media screen and (max-width: 31.25em) {
+  #track-arte{
+    width: 180px;
+    height: 180px;
+  }
+
+  .repeat,
+  .random,
+  .playpause,
+  .prev,
+  .next{
+    padding: 10px;
+  }
+
+  .loader .stroke{
+    height: 80%;
+    width: 7px;
+  }
+}

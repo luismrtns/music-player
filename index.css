@@ -20,7 +20,6 @@ body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
   background-image: linear-gradient(to top, #47d1ff, var(--cor-preta) 80%);
-  /* background-color: #fafa7f; */
   font-size: 1.6rem;
   overflow-y: hidden;
 }
