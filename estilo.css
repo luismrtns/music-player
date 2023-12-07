@@ -15,7 +15,6 @@
 
 body{
   font-family: 'Poppins', sans-serif;
-  /* background-color: var(--cor-2);*/
   color: var(--cor-1); 
 }
 
@@ -29,7 +28,6 @@ body{
 }
 
 .wrapper{
-  /* background-color: color-mix(in srgb, var(--cor-2), var(--cor-3) 50%); */
   border: 1px solid transparent;
   padding: 30px;
   border-radius: 20px;
@@ -47,7 +45,6 @@ body{
   margin: 25px;
   height: 200px;
   width: 200px;
-  border: 2px solid #f1f1f17a;
   background-size: cover;
   background-position: center;
   border-radius: 50%;
